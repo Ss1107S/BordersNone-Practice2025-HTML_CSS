@@ -18,27 +18,57 @@
     }
     
     .container{
-        display: flex;
-        flex: 1;
-        padding: 15px 40px;
-        background-color: rgb(20, 20, 42);
+        background-color: rgb(0, 0, 27);
         border-radius: 15px;
         max-width: 1100px;
     }
 
-    .main{
+    .nav{
         display: flex;
+        gap: 20px;
+    }
+
+    .nav_right{
+        border: solid 2px rgb(22, 21, 42);
+        border-radius: 15px;
+        background-color:  rgb(17, 16, 32);
+        color: white;
+        padding: 10px 19px;
+    }
+
+    .main{
+        margin-top: 30px;
+        display: flex;
+        gap: 25px;
+    }
+
+    .part_right{
+        display: flex;
+        gap: 10px;
         flex-direction: column;
+        width: 100%;
+    }
+
+    .right_first, .right_second, .right_fird{
+        border: solid 2px rgb(22, 21, 42);
+        border-radius: 10px;
+        padding: 10px 15px;
+        margin: 0;
+    }
+
+    p{
+        color: gray;
+        margin: 3px;
     }
 
 
 </style>
 <body>
     <div class="container">
-        <div>
-            <div>NAVBAR</div>
+        <div class="nav">
+            <div style="color: rgb(79, 171, 247);">NAVBAR</div>
             <div>Overview</div><div>Guides</div><div>Playground</div><div>Docs</div>  
-            <div>Get access</div>
+            <button class="nav_right">Get access</button>
         </div>
 
         <div class="main">
@@ -48,20 +78,20 @@
             </div>
 
             <div class="part_right">
-                <div>
-                01
-                Responsive header bar
-                Lorem ipsum dolor sit amet.
+                <div class="right_first">
+                    <p>01</p>
+                    Responsive header bar
+                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
-                <div>
-                02
-                Two-column split
-                Lorem ipsum dolor sit amet.
+                <div class="right_second">
+                    <p>02</p>
+                    Two-column split
+                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
-                <div>
-                03
-                Vertical card stack
-                Lorem ipsum dolor sit amet.
+                <div class="right_fird">
+                    <p>03</p>
+                    Vertical card stack
+                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
         </div>
