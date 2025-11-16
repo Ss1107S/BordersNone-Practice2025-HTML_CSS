@@ -20,20 +20,26 @@
     .container{
         background-color: rgb(0, 0, 27);
         border-radius: 15px;
-        max-width: 1100px;
+        width: 1100px;
     }
 
     .nav{
         display: flex;
         gap: 20px;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .nav_right{
         border: solid 2px rgb(22, 21, 42);
-        border-radius: 15px;
+        border-radius: 20px;
         background-color:  rgb(17, 16, 32);
         color: white;
         padding: 10px 19px;
+    }
+
+    button .nav_right{
+        float: right;
     }
 
     .main{
@@ -67,7 +73,9 @@
     <div class="container">
         <div class="nav">
             <div style="color: rgb(79, 171, 247);">NAVBAR</div>
-            <div>Overview</div><div>Guides</div><div>Playground</div><div>Docs</div>  
+            <div style="flex-direction: row; display: flex;justify-content: center; gap: 15px;color:gray">
+                <div>Overview</div><div>Guides</div><div>Playground</div><div>Docs</div>  
+            </div>    
             <button class="nav_right">Get access</button>
         </div>
 
