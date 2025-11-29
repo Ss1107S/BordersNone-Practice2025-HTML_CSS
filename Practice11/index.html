@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(50, 49, 49);
+            color: white;
+        }
+        
+        .main{
+             width: 900px;
+            height: 290px;
+            background-color: gray;
+            position: absolute;
+            top: 30%;
+            right: 10%;
+        }
+        .first {
+            background-color: rgb(136, 204, 35);
+            width: 600px;
+            height: 200px;
+            position: absolute;
+            left: 40px;
+        }
+        
+        .second{
+            background-color: rgb(2, 148, 178);
+            width: 300px;
+            height: 150px;
+            position: relative;
+            left: 250px;
+            top: 10px;
+        }
+
+        .third{
+            background-color: rgb(198, 0, 0);
+            width: 400px;
+            height: 180px;
+            position: relative;
+            left: 50%;
+            bottom: 32%;
+        }
+        .first, .second, .third > div{
+            padding: 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="first">
+            <div>
+                <p>.bar{</p>
+                <p>z-index:1;</p>
+                <p>}</p>
+            </div>
+        </div>
+
+        <div class="second">
+            <div>
+                <p>.bar{</p>
+                <p>z-index:1000;</p>
+                <p>}</p>
+            </div>
+        </div>
+
+        <div class="third">
+            <div>
+                <p>.bar{</p>
+                <p>z-index:2;</p>
+                <p>}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
